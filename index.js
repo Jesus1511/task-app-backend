@@ -1,5 +1,5 @@
 import express from 'express'
-import {register, login, logout, profile, deleteUser} from './controllers/user.controllers.js'
+import {register, login, logout, profile, deleteUser} from './controllers/user.controllers.js' 
 import { createTask, deleteTask, updateTask, createFolder, getFolder, updateFolder, deleteFolder, createCompletable, updateCompletable } from './controllers/tasks.controllers.js'
 import { registerSquema, loginSquema } from './midlewares/authInfo.js'
 import { confirmRegister } from './controllers/confirmRegister.js'
@@ -13,7 +13,7 @@ const app = express()
 conectDB()
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://taskproductivityapp.netlify.app',
   credentials: true 
 }));
 
