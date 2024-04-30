@@ -26,7 +26,6 @@ app.post('/api/logout', logout);
 app.get('/api/profile', authenticateUserToken, profile);
 app.delete('/api/delete', authenticateUserToken, deleteUser);
 
-
 app.get('/api/confirmRegister/:id',confirmRegister)
 
 app.post('/api/folders/create', authenticateUserToken, createFolder)

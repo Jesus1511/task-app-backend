@@ -1,6 +1,6 @@
 import { createAccesToken } from "../jwt.js"
 import User from "../mongoSquemas/user.squema.js"
-import { loginKey } from '../config.js'
+import { loginKey } from '../config.js' 
 
 export const confirmRegister = async (req, res) => { 
     try {
